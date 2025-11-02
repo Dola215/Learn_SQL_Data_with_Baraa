@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: mysql_learning_db
+    environment:
+      # --- IMPORTANT: Set a strong password here ---
+      MYSQL_ROOT_PASSWORD: mysql#123 
+      # MYSQL_DATABASE: learning_db
+      # Allows connections from outside the container (e.g., MySQL Workbench)
+      MYSQL_ROOT_HOST: '%' 
+    ports:
+      - "3306:3306"
+    volumes:
+      # 1. Data Persistence
+      - db_data:/var/lib/mysql
+      # 2. Initialization: RUNS the DDL schema file on first start
+      - ./sql/schemas/01_schema.sql:/docker-entrypoint-initdb.d/init.sql:ro
+      # 3. Learning Queries: Make your learning scripts accessible inside the container (optional, but good practice)
+      - ./sql/queries:/docker-entrypoint-initdb.d/queries:ro 
+    restart: unless-stopped
+
+volumes:
+  db_data:
