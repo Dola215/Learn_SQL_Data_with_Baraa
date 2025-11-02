@@ -1,0 +1,37 @@
+32:00 Chapter 2
+34:08 What is SQL Query
+35:19 SQL Clauses
+
+35:50 SELECT & FROM
+43:52 WHERE
+50:00 ORDER BY
+58:17 GROUP BY
+1:07:07 HAVING
+1:15:05 DISTINCT
+1:18:28 TOP/LIMIT
+1:23:41 Coding & Execution Order
+1:27:43 Cool SQL Stuff
+
+1:32:34 Chapter 3 DDL
+1:33:00 CREATE
+1:38:38 ALTER
+1:42:04 DROP
+
+1:43:46 Chapter 4 DML
+1:44:00 INSERT
+1:57:14 UPDATE
+2:03:44 DELETE
+
+2:08:06 Chapter 5 Filtering Data  
+2:09:08 Comparison operators
+2:17:25 AND Operator
+2:22:06 OR Operator
+2:25:00 NOT Operator
+2:28:28 BETWEEN Operator
+2:32:57 IN Operator
+2:37:13 LIKE Operators
+
+2:47:55 SQL Joins
+2:58:00 INNER JOIN
+3:11:07 LEFT ANTI JOIN
+
